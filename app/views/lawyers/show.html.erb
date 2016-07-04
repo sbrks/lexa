@@ -1,7 +1,9 @@
-<!-- show.html.erb -->
-
-<h1><%= @lawyer.first_name + " " + @lawyer.last_name %></h1>
-<img src="#" width="400px">
-<h2>Location: <%= @lawyer.location %> </h2>
-<h2>Practice Areas: <%= @lawyer.practice_areas %> </h2>
-<h2>Years Experience: <%= @lawyer.years_experience%> </h2>
+<div class="lawyer">
+	<h2><%= link_to @lawyer.first_name + " " + @lawyer.last_name, lawyer_path(@lawyer) %> </h2>
+	<div class="column"><img class="image" src="<%= @lawyer.image_url %>" alt="image for laywer" width="150px">
+			</div>
+	<h2>Location: <%= @lawyer.location %> </h2>
+	<h2>Practice Areas: <%= @lawyer.practice_areas %> </h2>
+	<h2>Years Experience: <%= @lawyer.years_experience%> </h2>
+	<h3>Email: <%= @lawyer.email %></h3></div>
+</div>

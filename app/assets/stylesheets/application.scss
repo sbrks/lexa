@@ -52,6 +52,30 @@ body {
 	background-color: gray;
 }
 
+.client, .lawyer {
+	width: 70%;
+	margin-left: 10%;
+}
+
+.client {
+	margin-right: 10%;
+}
+
+.client img {
+	width: 150px;
+	height: 150px;
+}
+
+.lawyer img {
+	width: 150px;
+	height: 150px;
+}
+
+.container h1 {
+	text-align:center;
+}
+
+
 
 
 

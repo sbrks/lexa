@@ -1,1 +1,43 @@
-edit.html.erb 
+<h1>Edit Profile</h1>
+
+
+  <%= form_for @client, url: client_path(@client), method: :patch do |f| %>
+
+  <div>
+
+  <%= f.text_field :first_name, placeholder: "First Name" %> <%= f.text_field :last_name, placeholder: "Last Name" %>
+  </div>
+  <div>
+  <%= f.text_field :email, placeholder: "Email" %> <%= f.text_field :confirm_email, placeholder: "Confirm Email" %>
+  </div>
+  <div>
+    <%= f.password_field :password, placeholder: "Password" %> <%= f.password_field :confirm_password, placeholder: "Confirm Password" %>
+  </div>
+
+    <div>
+    <%= f.text_field :location, placeholder: "Location" %>
+  </div>
+
+
+  <div>
+    <%= f.text_field :description, placeholder: "Legal Issues" %>
+  </div>
+
+
+  <br>
+
+  <div>
+      <%= f.hidden_field :image_url, role: "uploadcare-uploader" %>
+  </div>
+
+
+  <%= f.submit "Update Profile" %>
+
+
+  <% end %>
+  <% flash.each do |key, value| %>
+    <div class="<%= flash_class(key) %>">
+      <%= value %>
+    </div>
+  <% end %>
+  </div>

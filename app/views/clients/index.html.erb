@@ -1,27 +1,22 @@
-<!-- index.html.erb -->
-<html>
-<head>
-  <title>Lexa</title>
-</head>
-<body>
-  <header>
-    <h1>Lexa</h1>  
-    <ul>
-      <li>Attorney 1</li>
-      <li>Attorney 2</li>
-      <li>Attorney 3</li>
-      <li>Attorney 4</li>
-    </ul>
-  </header>
-  <main>
-    <%= yield %>
-  </main>
-  <footer>
-    <ul>
-      <li>About us</li>
-      <li>Team</li>
-      <li>Terms and Conditions</li>
-    </ul>
-  </footer>
-</body>
-</html>
+<div class="container">
+
+<h1>Clients</h1>
+	<% flash.each do |key, value| %>
+	<div class="<%= flash_class(key) %>" >
+		<%= value %>
+	</div>
+	<% end %>
+
+	<% @clients.each do |client| %>
+		<div class="client">
+			<h2><%= link_to client.first_name + " " + client.last_name, client_path(client) %> </h2>
+			<div class="column"><img class="image" src="<%= client.image_url %>" alt="image for client" width="150px" height="150px">
+			</div>
+
+		<h2>Location: <%= client.location %> </h2>
+		<h2>Legal Issue: <%= client.description%> </h2>
+		<b>Email:</b> <%= client.email %></div>
+		<div class="clearfix"></div>
+	</div>
+	<% end %>
+</div>

@@ -31,7 +31,7 @@ Rails.application.routes.draw do
   get '/clients/:id', to: 'clients#show'
 
 
-  resources :lawyers, :clients
+  resources :lawyers, :clients, :sessions
 
 
 

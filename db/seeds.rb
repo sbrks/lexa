@@ -12,33 +12,72 @@ Client.destroy_all
 
 lawyers = Lawyer.create([
   {
-    first_name: "On Avery Island",
-    last_name: "Neutral Milk Hotel",
-    location: "NYC",
-    practice_areas: "https://upload.wikimedia.org/wikipedia/en/7/73/On_avery_island_album_cover.jpg",
-    years_experience: 12,
+    first_name: "Serena",
+    last_name: "Williams",
+    location: "Chicago",
+    image_url: "https://upload.wikimedia.org/wikipedia/en/7/73/On_avery_island_album_cover.jpg",
+    years_experience: 5,
     email: "abc@123.com",
-    password: "password"
+    password: "password",
+    practice_areas: "White collar litigation"
   },
   {
-    first_name: "On Avery Island",
-    last_name: "Neutral Milk Hotel",
+    first_name: "Martina",
+    last_name: "Navritalova",
     location: "NYC",
-    practice_areas: "https://upload.wikimedia.org/wikipedia/en/7/73/On_avery_island_album_cover.jpg",
-    years_experience: 12,
-    email: "abc@123.com",
-    password: "password"
+    image_url: "https://upload.wikimedia.org/wikipedia/en/7/73/On_avery_island_album_cover.jpg",
+    years_experience: 8,
+    email: "law@law.com",
+    password: "password",
+    practice_areas: "White collar litigation"
   },
   {
-    first_name: "On Avery Island",
-    last_name: "Neutral Milk Hotel",
-    location: "NYC",
-    practice_areas: "https://upload.wikimedia.org/wikipedia/en/7/73/On_avery_island_album_cover.jpg",
+    first_name: "Andre",
+    last_name: "Agassi",
+    location: "Boston",
+    image_url: "https://upload.wikimedia.org/wikipedia/en/7/73/On_avery_island_album_cover.jpg",
     years_experience: 12,
-    email: "abc@123.com",
-    password: "password"
+    email: "legal@legal.com",
+    password: "password",
+    practice_areas: "White collar litigation"
+  },
+    {
+    first_name: "Steffi",
+    last_name: "Graf",
+    location: "San Francisco",
+    image_url: "https://upload.wikimedia.org/wikipedia/en/7/73/On_avery_island_album_cover.jpg",
+    years_experience: 8,
+    email: "lawyer1@law.com",
+    password: "password",
+    practice_areas: "White collar litigation"
+  },
+    {
+    first_name: "Rafael",
+    last_name: "Nadal",
+    location: "Los Angeles",
+    image_url: "https://upload.wikimedia.org/wikipedia/en/7/73/On_avery_island_album_cover.jpg",
+    years_experience: 8,
+    email: "lawyer2@law.com",
+    password: "password",
+    practice_areas: "White collar litigation"
+  },
+    {
+    first_name: "Novak",
+    last_name: "Djokovic",
+    location: "Miami",
+    image_url: "https://upload.wikimedia.org/wikipedia/en/7/73/On_avery_island_album_cover.jpg",
+    years_experience: 8,
+    email: "lawyer3@law.com",
+    password: "password",
+    practice_areas: "White collar litigation"
   }
 ])
+
+
+	lawyers.each do |l|
+		l.save
+	end
+
 
 clients = Client.create([
   {first_name:"Kate",last_name:"Lincoln",email:"kl@gmail.com",location:"Beaverton, CO",phone:"303-555-4444",password:"password",
