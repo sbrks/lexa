@@ -54,5 +54,4 @@ class ClientsController < ApplicationController
 		end
 
 
-
-	private
+end

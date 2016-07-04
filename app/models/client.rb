@@ -1,5 +1,8 @@
 class Client < ActiveRecord::Base
 
+	attr_accessor :user_t
+
+	has_secure_password
 
 	validates :email, presence: true, uniqueness:true, confirmation: true
 	validates :first_name, presence: true
@@ -11,8 +14,5 @@ class Client < ActiveRecord::Base
 		@client = Client.find_by({email: params[:email]})
 		@client.try(:authenticate, params[:password])
 	end
-
-	has_secure_password
-	
 
 end

@@ -1,5 +1,8 @@
 class Lawyer < ActiveRecord::Base
 
+	attr_accessor :user_t
+
+	has_secure_password
 
 	validates :email, presence: true, uniqueness:true, confirmation: true
 	validates :first_name, presence: true
@@ -12,6 +15,6 @@ class Lawyer < ActiveRecord::Base
 		@lawyer.try(:authenticate, params[:password])
 	end
 
-	has_secure_password
-	
+
+
 end

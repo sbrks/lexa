@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Lexa</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<%= render "header" %>
+    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
 
-<main>
-	<%= yield %>
-</main>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
 
-
-<%= render "footer" %>
+	<!-- foundation css motion-ui library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
 
 
-</body>
+  </head>
+
+  <body>
+
+    <%= yield %>
+
+  </body>
 </html>
