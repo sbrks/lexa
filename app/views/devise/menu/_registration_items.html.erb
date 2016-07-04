@@ -1,0 +1,9 @@
+<% if logged_in? %>
+  <li>
+  <%= link_to('Edit registration', :new) %>
+  </li>
+<% else %>
+  <li>
+  <%= link_to('Register', :show)  %>
+  </li>
+<% end %>

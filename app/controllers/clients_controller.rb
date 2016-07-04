@@ -1,6 +1,6 @@
 class ClientsController < ApplicationController
 
-	before_action :require_login, :except => [:new, :create, :index]
+	before_action :require_login, :except => [:new, :create, :index, :show]
 	before_action :is_client, only:[:edit]
 	before_action :client_profile?, only:[:edit, :show]
 

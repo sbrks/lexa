@@ -1,0 +1,41 @@
+<div class="client">
+      <img class = 'image' src="<%= @client.image_url %>" alt="image for client" width='150px'>
+
+
+  <div><h2><%= @client.first_name + " " + @client.last_name %></h2></div>
+  <div><b>Email:</b> <%= @client.email %></div>
+  <div><b>Phone:</b> <%= @client.phone %></div>
+  <div><b>Location:</b> <%= @client.location %></div>
+  <div><b>Client Since:</b> <%= @client.created_at.strftime("%b %d, %Y") %></div>
+  <br>
+
+    
+</div>
+
+</div>
+  <br>
+</div>
+
+<div class="row">
+  <div class="client">
+
+<%if @lawyer %>
+
+  <h3>Your Attorney</h3>
+
+    <img src="<%= @lawyer.image_url %>" width="80px" alt="lawyer image"/>
+
+
+    <h6><%= link_to @lawyer.first_name + " " + @lawyer.last_name, lawyer_path(@lawyer)%></h6>
+    <%= @lawyer.description %><br>                      
+
+
+    <%= link_to "Change Attorney", :about %>
+
+      <% else %>
+        <div>
+          <h4>No Current Attorney</h4>
+        </div>
+      <% end %>
+    <div>
+</div>

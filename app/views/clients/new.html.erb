@@ -1,77 +1,11 @@
-<div class="row">
-  <div class="small-12 columns">
-    <br>
-    <div data-alert class="alert-box radius secondary">
-      <a href="http://codepen.io/ZURBFoundation/full/AuvoL/" target="_blank">Try viewing this in a separate tab and resizing your browser to see how the grid stacks →</a>
-    <a href="#" class="close">&times;</a>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="small-12 small-centered columns">
-      <form>
-        <div class="row">
-          <div class="large-12 columns">
-            <label>Input Label
-              <input type="text" placeholder="Text here" />
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 columns">
-            <label>Input Label
-              <input type="text" placeholder="Text here" />
-            </label>
-          </div>
-          <div class="large-4 columns">
-            <label>Input Label
-              <input type="text" placeholder="Text here" />
-            </label>
-          </div>
-          <div class="large-4 columns">
-            <div class="row collapse">
-              <label>Input Label</label>
-              <div class="small-9 columns">
-                <input type="text" placeholder="Domain" />
-              </div>
-              <div class="small-3 columns">
-                <span class="postfix">.com</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-12 columns">
-            <label>Select Box
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 columns">
-            <label>Choose Your Favorite</label>
-            <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Squirtle</label>
-            <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Charmander</label>
-          </div>
-          <div class="large-6 columns">
-            <label>Check these out</label>
-            <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-            <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-12 columns">
-            <label>Textarea Label
-              <textarea placeholder="small-12.columns"></textarea>
-            </label>
-          </div>
-        </div>
-      </form>
-  </div>
+<div class="client">
+<h1>Create a New User Account</h1>
+<%= simple_form_for @client do |f| %>
+  <%= f.input :first_name, label: 'First Name', error: 'Username is mandatory, please specify one' %>
+  <%= f.input :last_name, label: 'Last Name', error: 'Username is mandatory, please specify one' %>
+  <%= f.input :location, label: 'Location', error: 'Username is mandatory, please specify one' %>
+  <%= f.input :email, placeholder: 'user@domain.com' %>
+  <%= f.input :password, hint: 'Minimum 8 characters' %>
+  <%= f.button :submit, "Create Account", class: "button" %>
+<% end %>
 </div>
