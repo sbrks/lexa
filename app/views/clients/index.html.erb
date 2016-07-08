@@ -1,11 +1,6 @@
 <div class="container">
 
 <h1>Clients</h1>
-	<% flash.each do |key, value| %>
-	<div class="<%= flash_class(key) %>" >
-		<%= value %>
-	</div>
-	<% end %>
 
 	<% @clients.each do |client| %>
 		<div class="client">
@@ -15,7 +10,6 @@
 
 		<h2>Location: <%= client.location %> </h2>
 		<h2>Legal Issue: <%= client.description%> </h2>
-		<b>Email:</b> <%= client.email %></div>
 		<div class="clearfix"></div>
 	</div>
 	<% end %>

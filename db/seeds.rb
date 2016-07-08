@@ -17,8 +17,6 @@ lawyers = Lawyer.create([
     location: "Chicago",
     image_url: "https://upload.wikimedia.org/wikipedia/en/7/73/On_avery_island_album_cover.jpg",
     years_experience: 5,
-    email: "abc@123.com",
-    password: "password",
     practice_areas: "White collar litigation"
   },
   {
@@ -27,8 +25,6 @@ lawyers = Lawyer.create([
     location: "NYC",
     image_url: "https://upload.wikimedia.org/wikipedia/en/7/73/On_avery_island_album_cover.jpg",
     years_experience: 8,
-    email: "law@law.com",
-    password: "password",
     practice_areas: "White collar litigation"
   },
   {
@@ -37,8 +33,6 @@ lawyers = Lawyer.create([
     location: "Boston",
     image_url: "https://upload.wikimedia.org/wikipedia/en/7/73/On_avery_island_album_cover.jpg",
     years_experience: 12,
-    email: "legal@legal.com",
-    password: "password",
     practice_areas: "White collar litigation"
   },
     {
@@ -47,8 +41,6 @@ lawyers = Lawyer.create([
     location: "San Francisco",
     image_url: "https://upload.wikimedia.org/wikipedia/en/7/73/On_avery_island_album_cover.jpg",
     years_experience: 8,
-    email: "lawyer1@law.com",
-    password: "password",
     practice_areas: "White collar litigation"
   },
     {
@@ -57,8 +49,6 @@ lawyers = Lawyer.create([
     location: "Los Angeles",
     image_url: "https://upload.wikimedia.org/wikipedia/en/7/73/On_avery_island_album_cover.jpg",
     years_experience: 8,
-    email: "lawyer2@law.com",
-    password: "password",
     practice_areas: "White collar litigation"
   },
     {
@@ -67,8 +57,6 @@ lawyers = Lawyer.create([
     location: "Miami",
     image_url: "https://upload.wikimedia.org/wikipedia/en/7/73/On_avery_island_album_cover.jpg",
     years_experience: 8,
-    email: "lawyer3@law.com",
-    password: "password",
     practice_areas: "White collar litigation"
   }
 ])
@@ -80,16 +68,16 @@ lawyers = Lawyer.create([
 
 
 clients = Client.create([
-  {first_name:"Kate",last_name:"Lincoln",email:"kl@gmail.com",location:"Beaverton, CO",phone:"303-555-4444",password:"password",
+  {first_name:"Kate",last_name:"Lincoln",location:"Beaverton, CO",phone:"303-555-4444",
     description:"Torn L3 ligament, misaligned clavicle",
     image_url:"https://ucarecdn.com/a1272143-9cdf-49c3-9b9a-9e953b74d1e7/DefaultUserImage.png"},
-  {first_name:"Vinjay",last_name:"Sulman",email:"vinjay@yahoo.com",location:"Alexandria, VA",phone:"703-555-5555",password:"password",
+  {first_name:"Vinjay",last_name:"Sulman",location:"Alexandria, VA",phone:"703-555-5555",
     description:"Aggravated lower lumbar, hip malaplaysia",
     image_url:"https://ucarecdn.com/a1272143-9cdf-49c3-9b9a-9e953b74d1e7/DefaultUserImage.png"},
-  {first_name:"Leticia",last_name:"Abercrombie",email:"ladyw@hotmal.com",location:"Colorado Springs, CO",phone:"303-555-6666",password:"password",
+  {first_name:"Leticia",last_name:"Abercrombie",location:"Colorado Springs, CO",phone:"303-555-6666",
     description:"Sciatic crease, irregular spagiotic hemotoma",
     image_url:"https://ucarecdn.com/a1272143-9cdf-49c3-9b9a-9e953b74d1e7/DefaultUserImage.png"},
-  {first_name:"Dan",last_name:"Davis",email:"ddavis@msn.com",location:"Pittsburg, PA",phone:"412-555-7777",password:"password",
+  {first_name:"Dan",last_name:"Davis",location:"Pittsburg, PA",phone:"412-555-7777",
     description:"Torn humeral mass, shattered right tibia",
     image_url:"https://ucarecdn.com/a1272143-9cdf-49c3-9b9a-9e953b74d1e7/DefaultUserImage.png"}
   ])

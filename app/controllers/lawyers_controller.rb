@@ -1,8 +1,8 @@
 class LawyersController < ApplicationController
 
-	before_action :require_login, :except => [:index, :new, :show, :create]
+	# before_action :require_login, :except => [:index, :new, :show, :create]
 
-	before_action :lawyer_profile?, only:[:edit]
+	# before_action :lawyer_profile?, only:[:edit]
 
 	def index 
 		@lawyers = Lawyer.all
