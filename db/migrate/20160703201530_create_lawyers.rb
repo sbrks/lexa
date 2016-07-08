@@ -6,7 +6,6 @@ class CreateLawyers < ActiveRecord::Migration
       t.string :location
       t.string :practice_areas
       t.integer :years_experience
-
       t.timestamps null: false
     end
   end

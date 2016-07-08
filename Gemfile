@@ -33,7 +33,7 @@ gem 'foundation-rails'
 gem 'simple_form'
 
 #devise/auth
-gem 'devise'
+# gem 'devise'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

@@ -26,12 +26,10 @@ ActiveRecord::Schema.define(version: 20160704204020) do
     t.string   "last_name"
     t.string   "location"
     t.text     "description"
-    t.string   "email"
-    t.string   "password_digest"
     t.string   "phone"
     t.string   "image_url"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.integer  "lawyer_id"
   end
 
@@ -45,8 +43,6 @@ ActiveRecord::Schema.define(version: 20160704204020) do
     t.integer  "years_experience"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
-    t.string   "email"
-    t.string   "password_digest"
     t.string   "phone"
     t.string   "description"
     t.string   "image_url"

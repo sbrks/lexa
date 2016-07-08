@@ -5,8 +5,6 @@ class CreateClients < ActiveRecord::Migration
       t.string :last_name
       t.string :location
       t.text :description
-      t.string :email
-      t.string :password_digest
       t.string :phone
       t.string :image_url
 

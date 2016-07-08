@@ -1,8 +1,11 @@
 class Client < ActiveRecord::Base
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
 
 	attr_accessor :user_t
 
-	has_secure_password
 
 	validates :email, presence: true, uniqueness:true, confirmation: true
 	validates :first_name, presence: true
