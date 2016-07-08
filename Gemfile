@@ -35,6 +35,8 @@ gem 'simple_form'
 #devise/auth
 # gem 'devise'
 
+gem 'mail_form'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
