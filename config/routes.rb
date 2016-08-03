@@ -23,19 +23,6 @@ Rails.application.routes.draw do
 
 
 
-  get '/lawyers', to: 'lawyers#index'
-
-  get '/lawyers/new', to: 'lawyers#new'
-
-  get '/lawyers/:id', to: 'lawyers#show'
-
-  get '/clients', to: 'clients#index'
-
-  get '/clients/new', to: 'clients#new'
-
-  get '/clients/:id', to: 'clients#show'
-
-
   resources :lawyers, :clients, :sessions, :blog
 
 
