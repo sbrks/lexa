@@ -29,11 +29,6 @@ gem 'bcrypt', '~> 3.1.7'
 #foundation css
 gem 'foundation-rails'
 
-#simpleform
-gem 'simple_form'
-
-#devise/auth
-# gem 'devise'
 
 gem 'mail_form'
 
@@ -58,3 +53,4 @@ group :development do
   gem 'spring'
 end
 
+gem 'devise'

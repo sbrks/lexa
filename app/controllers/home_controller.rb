@@ -1,7 +1,6 @@
 class HomeController < ApplicationController
 
-	def home
-		render :home
+	def index
 	end
 
 	def about

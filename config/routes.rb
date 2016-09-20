@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :users
   #home page
 
-  root to: "home#home"
+  root to: "home#index"
 
-  get '/', to: 'home#home', as: 'home'
+  # get '/', to: 'home#', as: 'home'
 
   #about page
   get '/about', to: 'home#about', as: 'about'
